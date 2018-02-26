@@ -13,19 +13,19 @@ class FacebookCakeSessionPersistentDataHandler implements \Facebook\PersistentDa
     protected $sessionPrefix = null;
     
     /**
-    * Init the session handler
-    *
-    * @param boolean $enableSessionCheck
-    * @param string  $sessionPrefix
-    *
-    * @throws FacebookSDKException
-    */
+     * Init the session handler
+     *
+     * @param boolean $enableSessionCheck
+     * @param string  $sessionPrefix
+     *
+     * @throws FacebookSDKException
+     */
     public function __construct($enableSessionCheck = true, $sessionPrefix = 'Facebook.php-graph-sdk') {
 
         # CakeSession::start() will determine if Session has been started. 
         # If not, it will start the Session
         if ($enableSessionCheck && ! \CakeSession::start()) {
-            throw new FacebookSDKException('Sessions are not active.', 720);
+            throw new \Facebook\Exceptions\FacebookSDKException('Sessions are not active.', 720);
         }
 
         $this->sessionPrefix = $sessionPrefix . '.';
