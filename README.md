@@ -1,4 +1,4 @@
-## FacebookCakeSessionPersistentDataHandler
+# FacebookCakeSessionPersistentDataHandler
 
 [![Latest Stable Version](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/v/stable)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler)
 [![Latest Unstable Version](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/v/unstable)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler) 
@@ -8,6 +8,8 @@
 CakePHP 2.x session handler for Facebook php-graph-sdk. 
 
 Let Facebook php-graph-sdk use CakeSession for session access.
+
+## Installation
 
 ```
 composer require wrdx/dev-facebook-cake-session-persistent-data-handler
