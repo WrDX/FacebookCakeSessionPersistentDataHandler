@@ -1,0 +1,16 @@
+{
+    "name": "wrdx/facebook-cake-session-persistent-data-handler",
+    "description": "CakePHP 2.x session handler for Facebook php-graph-sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "WrDX",
+            "homepage": "https://wrdx.io"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "WrDX\\Facebook\\": "src"
+        }
+    }
+}
