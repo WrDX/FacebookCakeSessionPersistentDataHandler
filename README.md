@@ -1,6 +1,6 @@
-# FacebookCakeSessionPersistentDataHandler
+## FacebookCakeSessionPersistentDataHandler
 
-[![Latest Stable Version](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/v/stable?format=flat-square)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler) [![License](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/license?format=flat-square)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler)
+[![Latest Stable Version](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/v/stable?format=flat-square)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler) [![Latest Unstable Version](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/v/unstable?format=flat-square)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler) [![License](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/license?format=flat-square)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler)
 
 CakePHP 2.x session handler for Facebook php-graph-sdk. 
 
@@ -10,7 +10,7 @@ Let Facebook php-graph-sdk use CakeSession for session access.
 composer require wrdx/dev-facebook-cake-session-persistent-data-handler
 ```
 
-Use as following:
+## Usage
 
 ```
 $fb = new \Facebook\Facebook([
