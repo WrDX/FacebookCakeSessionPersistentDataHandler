@@ -1,6 +1,9 @@
 ## FacebookCakeSessionPersistentDataHandler
 
-[![Latest Stable Version](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/v/stable?format=flat-square)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler) [![Latest Unstable Version](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/v/unstable?format=flat-square)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler) [![License](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/license?format=flat-square)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler)
+[![Latest Stable Version](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/v/stable)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler)
+[![Latest Unstable Version](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/v/unstable)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler) 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/WrDX/FacebookCakeSessionPersistentDataHandler/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/WrDX/FacebookCakeSessionPersistentDataHandler/?branch=master) 
+[![License](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/license)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler)
 
 CakePHP 2.x session handler for Facebook php-graph-sdk. 
 
