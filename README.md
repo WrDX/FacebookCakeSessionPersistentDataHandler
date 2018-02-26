@@ -1,6 +1,10 @@
 # FacebookCakeSessionPersistentDataHandler
 
-CakePHP 2.x session handler for Facebook php-graph-sdk. Let Facebook php-graph-sdk use CakeSession for reading/writing the session.
+[![Latest Stable Version](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/v/stable?format=flat-square)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler) [![License](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/license?format=flat-square)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler)
+
+CakePHP 2.x session handler for Facebook php-graph-sdk. 
+
+Let Facebook php-graph-sdk use CakeSession for session access.
 
 ```
 composer require wrdx/dev-facebook-cake-session-persistent-data-handler
@@ -17,7 +21,7 @@ $fb = new \Facebook\Facebook([
 ]);
 ```
 
-Make sure your CakePHP installation uses the composer autoloader. In your Config/bootstrap.php file add the following:
+Make sure your CakePHP installation uses the Composer autoloader. In your Config/bootstrap.php file add the following:
 
 ```
 # Load Composer autoload.
