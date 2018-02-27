@@ -8,6 +8,10 @@
             "homepage": "https://wrdx.io"
         }
     ],
+    "require": {
+        "cakephp/cakephp": "2.*",
+        "facebook/graph-sdk": "5.*"
+    },
     "autoload": {
         "psr-4": {
             "WrDX\\Facebook\\": "src"
