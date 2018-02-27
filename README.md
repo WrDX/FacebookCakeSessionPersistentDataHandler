@@ -3,7 +3,7 @@
 [![Latest Stable Version](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/v/stable)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler)
 [![Latest Unstable Version](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/v/unstable)](https://packagist.org/packages/wrdx/facebook-cake-session-persistent-data-handler#dev-master) 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/WrDX/FacebookCakeSessionPersistentDataHandler/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/WrDX/FacebookCakeSessionPersistentDataHandler/?branch=master) 
-[![License](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/license)](https://github.com/WrDX/FacebookCakeSessionPersistentDataHandler/blob/master/LICENCE.md)
+[![License](https://poser.pugx.org/wrdx/facebook-cake-session-persistent-data-handler/license)](https://github.com/WrDX/FacebookCakeSessionPersistentDataHandler/blob/master/LICENCE)
 
 CakePHP 2.x session handler for Facebook php-graph-sdk. 
 
