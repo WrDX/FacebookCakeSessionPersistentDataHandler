@@ -22,7 +22,7 @@ $fb = new \Facebook\Facebook([
   'app_id' => '{app-id}',
   'app_secret' => '{app-secret}',
   'default_graph_version' => '{default-graph-version}',
-  'persistent_data_handler' => new \WrDX\Facebook\FacebookCakeSessionPersistentDataHandler(),
+  'persistent_data_handler' => new \WrDX\Facebook\FacebookCakeSessionPersistentDataHandler($this->Session),
 ]);
 ```
 

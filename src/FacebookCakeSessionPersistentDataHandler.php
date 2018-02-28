@@ -8,23 +8,31 @@ namespace WrDX\Facebook;
 class FacebookCakeSessionPersistentDataHandler implements \Facebook\PersistentData\PersistentDataInterface {
 
     /**
+     * @var object Session handler
+     */
+    private $_CakeSession;
+
+    /**
      * @var string Prefix to use for session variables.
      */
     protected $sessionPrefix = null;
 
     /**
-     * Init the session handler
+     * FacebookCakeSessionPersistentDataHandler constructor.
      *
-     * @param boolean $enableSessionCheck
-     * @param string  $sessionPrefix
+     * @param object $CakeSession
+     * @param bool   $enableSessionCheck
+     * @param string $sessionPrefix
      *
-     * @throws FacebookSDKException
+     * @throws \Facebook\Exceptions\FacebookSDKException
      */
-    public function __construct($enableSessionCheck = true, $sessionPrefix = 'Facebook.php-graph-sdk') {
+    public function __construct($CakeSession, $enableSessionCheck = true, $sessionPrefix = 'Facebook.php-graph-sdk') {
+
+        $this->_CakeSession = $CakeSession;
 
         # CakeSession::start() will determine if Session has been started
         # If not, it will start the Session
-        if ($enableSessionCheck && ! \CakeSession::start()) {
+        if ($enableSessionCheck && ! $this->_CakeSession->start()) {
             throw new \Facebook\Exceptions\FacebookSDKException('Sessions are not active.', 720);
         }
 
@@ -40,7 +48,7 @@ class FacebookCakeSessionPersistentDataHandler implements \Facebook\PersistentDa
      * @return mixed
      */
     public function get($key) {
-        return \CakeSession::read($this->sessionPrefix . $key);
+        return $this->_CakeSession->read($this->sessionPrefix . $key);
     }
 
     /**
@@ -48,9 +56,11 @@ class FacebookCakeSessionPersistentDataHandler implements \Facebook\PersistentDa
      *
      * @param string $key
      * @param mixed  $value
+     *
+     * @return mixed
      */
     public function set($key, $value) {
-        \CakeSession::write($this->sessionPrefix . $key, $value);
+        return $this->_CakeSession->write($this->sessionPrefix . $key, $value);
     }
 
 }
