@@ -12,12 +12,17 @@ class FacebookCakeSessionPersistentDataHandlerTest extends \PHPUnit_Framework_Te
     public function testInactiveSessionsWillThrowFacebooksdkxception() {
         $CakeSession = $this
             ->getMockBuilder('CakeSession')
-            ->setMethods(['start'])
+            ->setMethods(['valid', 'started'])
             ->getMock();
 
         $CakeSession
             ->expects($this->once())
-            ->method('start')
+            ->method('valid')
+            ->will($this->returnValue(true));
+
+        $CakeSession
+            ->expects($this->once())
+            ->method('started')
             ->will($this->returnValue(false));
 
         new FacebookCakeSessionPersistentDataHandler($CakeSession);

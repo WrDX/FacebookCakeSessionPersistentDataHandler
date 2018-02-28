@@ -30,9 +30,8 @@ class FacebookCakeSessionPersistentDataHandler implements \Facebook\PersistentDa
 
         $this->_CakeSession = $CakeSession;
 
-        # CakeSession::start() will determine if Session has been started
-        # If not, it will start the Session
-        if ($enableSessionCheck && ! $this->_CakeSession->start()) {
+        # Session check
+        if ($enableSessionCheck && ( ! $this->_CakeSession->valid() || ! $this->_CakeSession->started())) {
             throw new \Facebook\Exceptions\FacebookSDKException('Sessions are not active.', 720);
         }
 
